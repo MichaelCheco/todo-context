@@ -8,8 +8,8 @@ const Todos = () => {
         return (
           <div>
             <h2>
-              {data.state.todos.map(todo => (
-                <h2>{todo.task}</h2>
+             Todos {data.state.todos.map(todo => (
+                <h4 onClick={() => data.actions.toggleComplete(todo)} style={{textDecoration: 'line-through'}}> {todo.task}</h4>
               ))}
             </h2>
           </div>

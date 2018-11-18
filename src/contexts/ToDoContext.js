@@ -4,12 +4,12 @@ export const Context = React.createContext({});
 
 class TodoProvider extends React.Component {
     constructor() {
-        super(
+        super()
             this.state = {
                 todos: [{task: 'Walk my dog', completed: false}],
                 todo: ''
             }
-        )
+        
     }
     handleChange = e => {
         this.setState({[e.target.name]: e.target.value})
